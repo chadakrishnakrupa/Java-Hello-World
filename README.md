@@ -1,2 +1,2 @@
 # Java-Hello-World
-Hello World Java Program
+Hello World Spring Boot Application

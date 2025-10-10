@@ -22,7 +22,7 @@ spec:
             - name: env.username
               valueFrom:
                 configMapKeyRef:
-                  name: {{ .Values.env.username }}
+                  name: myconfigmap
                   key: username
 ---
 apiVersion: v1

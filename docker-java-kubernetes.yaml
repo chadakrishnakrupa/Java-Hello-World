@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: hello-world-service
-          image: chadakrishnakrupa/my-image
+          image: chadakrishnakrupa/my-image:main
           imagePullPolicy: Always
           env:
             #username

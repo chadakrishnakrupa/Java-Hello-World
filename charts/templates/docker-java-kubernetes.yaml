@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloWorldDemo
+  name: hello-world-demo
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      service: helloWorld
+      service: hello-world
   template:
     metadata:
       labels:
-        service: helloWorld
+        service: hello-world
     spec:
       containers:
-        - name: helloWorld-service
+        - name: hello-world-service
           image: java-hello-world-server:latest
           imagePullPolicy: Always
 ---
@@ -26,7 +26,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    service: helloWorld
+    service: hello-world
   ports:
     - port: 8080
       targetPort: 8080

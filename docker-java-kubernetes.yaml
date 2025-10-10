@@ -24,7 +24,7 @@ metadata:
   name: service-entrypoint
   namespace: default
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     service: hello-world
   ports:

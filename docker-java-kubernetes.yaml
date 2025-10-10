@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: hello-world-service
-          image: java-hello-world-server:latest
+          image: chadakrishnakrupa/my-image
           imagePullPolicy: Always
           env:
             #username

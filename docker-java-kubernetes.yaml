@@ -17,6 +17,13 @@ spec:
         - name: hello-world-service
           image: java-hello-world-server:latest
           imagePullPolicy: Always
+          env:
+            #username
+            - name: env.username
+              valueFrom:
+                configMapKeyRef:
+                  name: {{ .Values.env.username }}
+                  key: username
 ---
 apiVersion: v1
 kind: Service

@@ -19,7 +19,7 @@ spec:
           imagePullPolicy: Always
           env:
             #username
-            - name: env.user.name
+            - name: env.username
               valueFrom:
                 configMapKeyRef:
                   name: myconfigmap
